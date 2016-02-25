@@ -1,0 +1,145 @@
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: grey;
+	 	
+}
+li {list-style-type: none;}
+
+.wrapper {
+	height: 1080px;
+	width: 1920px;
+	background-color: #fff;
+	border: 1px solid #000;
+	background-image: url(../img/background.png);
+	background-repeat: no-repeat;
+	margin: 5% 5%;	
+}
+p, a, li, h1, label, .forms{
+	font-family: 'helvetica_neueregular';
+}
+
+ .header {
+margin: 0px;
+padding: 0px;
+text-align: right;
+width: 100%;
+background-color: #074d8a;
+}
+
+ul .top-menu  {
+	height: 35px;
+	list-style: none;
+	font-size: 0px;
+	line-height:0px;
+	letter-spacing:0px;
+}
+.tM {	
+	text-align: left; 
+	display:inline-block;	
+}
+
+.tM a {
+	display: block;
+	padding: 12px 13px;
+	font-size: 14px;
+	color: #4eabda;
+	text-decoration:none;
+}
+.tM a:hover  {
+	background-color: #4eabda;
+	color: #FFF;
+	
+}
+.trM a {
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	text-decoration:none;
+}
+.trM {
+	text-align: center; 
+	display:inline-block;	
+}
+
+li:nth-child(5) {
+	border-right: solid 1px #56a2dc;
+}
+li:first-child {
+	
+	text-align: left;
+}
+.mark {
+	margin: 0px 0px -7px 0px;
+}
+a:hover .underline {
+	text-decoration: underline;
+}
+
+.content {
+	width: 560px;
+    height: 750px;
+	background: rgba(0,0,0,0.63);
+	margin: 100px 35%;
+	}
+h1 {
+	color: #FFF;
+	text-align: center;
+	line-height: 80px;	
+}
+hr {
+	color: #b8c3b3;
+}
+.button_f {
+	margin: 50px 25% 0px;
+	border-radius: 4px;
+}
+.horiz {
+	margin: 25px 25% 12px;
+}
+
+.forms {
+	margin: 15px 25%;
+	width: 245px;
+	color: #FF0;
+	background-color: #100f0f;
+	font-size: 14px;
+	padding: 7px 15px;
+	border: 0;
+	border-bottom: solid 1px #484948;	
+}
+input[type="text"]::-webkit-input-placeholder { color: #ffffff; }
+.forms:focus {background-color: #1b5288;
+border-bottom: solid 1px #689bcc;   
+box-shadow: 2px 2px 5px 5px rgba(27,82,136,0.75);
+}
+label {
+	margin: 40px 25%;
+	font-size: 13px;
+	color: #FFF;
+	letter-spacing: 0.05em;
+}
+.button-submit {
+	margin: 25px 37%;
+	background: linear-gradient(to top, #3686ca, #4faddb);
+	font-size: 16px;
+	color: #ffffff;
+	padding:7px;
+	border: 0px;
+	border-radius: 4px;
+	box-shadow: 0 0 3px 0px;
+	cursor: pointer;
+}
+.agreement {
+	display: block;
+	font-size: 12px;
+	color: #ffffff;
+	margin: 10px 15%;
+	text-align: center;
+	
+	}
