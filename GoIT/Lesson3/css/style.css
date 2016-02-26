@@ -12,8 +12,10 @@ body {
 	}
 .wrapper {
 	background-color:#ffffff;
-	width: 1070px;
-	padding: 50px 50px 60px 50px;	
+	width: 1069px;
+	margin: 0px auto;
+	padding-bottom: 60px;
+	box-shadow: 1px 3px 5px 5px	#dbdbdb;
 }
 .logo {
 	margin: 20px 35px 50px;
@@ -29,12 +31,11 @@ ul.top-menu li {
 	display:inline-block;
 	text-align:center;
 	font-size:14px;
-	width: 100px;	
 	}
 	
 ul.top-menu li a {
 	display: block;
-	padding: 10px;
+	padding: 10px 32px;
 	color: #ffffff; 
 	text-decoration: none;
 	border-left: solid 1px #535353;
@@ -55,6 +56,7 @@ ul.top-menu li a {
 	border-right: solid 1px #c8c8c8;
 	width: 240px;
 	height: 246px;
+	font-size: 13px;
 }
 
 ul.side-menu li {
@@ -84,22 +86,25 @@ ul.side-menu li a:hover {
 }
 .wheel {	
 	border: solid 1px #c8c8c8;
-	padding: 75px 95px 55px 95px;
-	
+	padding: 75px 95px 55px 95px;	
 }
-p {	display: block;
+
+p {
+	display: block;
 	color: #2c2c2c;
 	font-style: normal;
 	font-size: 13px;
 	line-height: 21px;
-	padding: 40px 20px 55px 20px;
+	padding: 40px 29px 55px 29px;
+	width: 675px;
 }
 .footer {
+	clear: both;
 	background-color: #e1e1e1;
-	margin: 20px 35px;
+	margin: 0 auto;
 	width: 980px;
 	height: 40px;
-	clear: both;
+	font-size: 13px;
 	}
 ul.bot-menu {
 	margin:0;
@@ -108,10 +113,11 @@ ul.bot-menu {
 ul.bot-menu li {
 	display:inline-block;
 	text-align: center;
-	}
+}
+	
 ul.bot-menu li a {
 	display: block;
-	padding: 10px 16px;
+	padding: 10px 47px;
 	text-decoration:none;
 	color: #2c2c2c;
 }
@@ -125,4 +131,4 @@ ul.bot-menu li a:hover {
 	padding: 10px 16px;
 	text-decoration:none;
 	color: #2c2c2c;
-	}
+}
