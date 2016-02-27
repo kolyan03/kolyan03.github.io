@@ -10,7 +10,8 @@ body {
 li {list-style-type: none;}
 
 .wrapper {
-	height: 1065px;
+	margin: 0 auto;
+	/*height: 1065px;*/
 	width: 1215px;
 	background-color: #fff;
 	border: 1px solid #000;
@@ -24,8 +25,8 @@ p, a, li, h1, label, .forms{
 /*/Здесь начинается хедер/*/
 
   .header {
-margin: 0px;
-padding: 0px;
+margin-bottom: 210px;
+padding-bottom: 0px;
 text-align: right;
 width: 1215px;
 height: 35px;
@@ -91,65 +92,87 @@ a:hover .underline {
 	width: 560px;
     height: 613px;
 	background: rgba(0,0,0,0.63);
-	margin: 213px 300px 200px 350px;
-	}
+	margin: 0px auto;
+	margin-bottom: 223px;
+	padding: 0px; auto;	
+	
+}
 h1 {
 	font-size:24px;
 	color: #FFF;
 	text-align: center;
-	line-height: 80px;	
+	line-height: 63px;	
 }
 hr {
 	color: #b8c3b3;
 }
 .button_f {
-	margin: 35px 138px 0px;
+	display:block;
+	margin: 0 auto;
+	margin-top: 35px;
+	margin-bottom: 32px;
+	background-color: #375090; /* Чтобы ФФ не выдавал полоску сверху*/
 	height: 35px;
+	width: 276px;
 	border: 0px;
-	border-radius: 4px;
+	border-radius: 5px;
 	cursor:pointer;
-	}
-.horiz {
-	margin: 25px 138px 15px;
 }
-
-.forms {
-	margin: 5px 138px;
+.horiz {
+	display: block;
+	margin: 28px auto;	
+}
+form {
+	margin: 0 auto;
 	width: 284px;
-  	height: 21px;
+}
+.forms {
+	display: block;
+	margin: 14px auto;
+	padding: 7px 0px 7px 0px;
+	width: 284px;
+  	height: 23px;
 	color: #FF0;
 	background-color: #100f0f;
 	font-size: 14px;
-	padding: 7px 15px;
-	border: 0;
+	border: 0px;
 	border-bottom: solid 1px #484948;	
 }
-input[type="text"]::-webkit-input-placeholder { color: #ffffff; }
-.forms:focus {background-color: #1b5288;
-border-bottom: solid 1px #689bcc;   
-box-shadow: 2px 2px 5px 5px rgba(27,82,136,0.75);
+input[type="text"]::-webkit-input-placeholder {
+	color: #ffffff;
+	padding-left: 20px;	
+}
+input[type="text"]::-moz-placeholder {
+    color: #ffffff; 
+	padding-left: 20px;	
+}
+
+.forms:focus {
+	background-color: #1b5288;
+	border-bottom: solid 1px #689bcc;   
+	box-shadow: 2px 2px 5px 5px rgba(27,82,136,0.75);
 }
 label {
-	margin: 5px 138px;
 	font-size: 14px;
-	color: #FFF;
+	color: #cccccc;
 	letter-spacing: 0.05em;
 }
 .button-submit {
-	margin: 25px 37%;
+	display:block;
+	margin: 25px auto 20px;
 	background: linear-gradient(to top, #3686ca, #4faddb);
 	font-size: 16px;
 	color: #ffffff;
-	padding:7px;
+	padding:6px;
 	border: 0px;
-	border-radius: 4px;
+	border-radius: 3px;
 	box-shadow: 0 0 3px 0px;
 	cursor: pointer;
 }
 .agreement {
 	display: block;
 	font-size: 11px;
-	color: #ffffff;
-	margin: 10px 138px;
+	color: #cccccc;
+	margin: 10px 130px;
 	text-align: center;
 }
