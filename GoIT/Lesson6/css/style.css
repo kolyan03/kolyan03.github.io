@@ -30,7 +30,7 @@ padding-bottom:13px;
 .phones {
 color:#5e696d;
 float:left;
-margin:5px 0 0 6px;
+margin:5px 0 0 7px;
 width:auto;
 }
 
@@ -280,7 +280,7 @@ border-radius:15px;
 background:url(../img/lap.png) no-repeat;
 background-position:6px 1px;
 padding-top:5px;
-padding-left:6px;
+padding-left:5px;
 }
 
 .tires span,.discs span,.bolts span {
@@ -290,29 +290,27 @@ margin-left:25px;
 }
 
 .discs {
-margin:-7px 0 0;
+margin:-1px 0 -2px;
 }
 
 .bolts {
-margin:-7px 0 0;
+margin:0 ;
 }
 
 a.content-side-menu {
 color:#465961;
 text-decoration:none;
 font-size:13px;
-display:block;
 margin:2px 0 6px 37px;
-padding:0;
+font-style: normal;
 }
 
 a.content-side-menu:hover {
-text-decoration:underline;
 color:#0c3256;
+text-decoration:underline;
 font-size:14px;
+font-weight: bold;
 font-style:italic;
-font-weight:700;
-margin:2px 0 6px 37px;
 }
 
 a.content-side-menu:before {
@@ -330,7 +328,7 @@ width:8px;
 height:8px;
 background:url(../img/marker.png);
 display:inline-block;
-margin:5px 3px 0 0;
+
 }
 
 .content-center a {
