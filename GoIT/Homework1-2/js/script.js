@@ -1,17 +1,19 @@
 // JavaScript Document
-
-
 var arrNames = [];
+	
 for (var i = 0; i < 5; i++) {
     var enteredName = prompt('Enter a name');
     enteredName.toString();
     arrNames.push(enteredName);
 }
+alert (arrNames);
 var checkAName = prompt('Enter your name');
 checkAName.toString();
+
 var result = false;
-for (var z = 0; z < arrNames.length; z++); {
-    if (arrNames[z] === checkAName) {
+
+for (var j = 0; j < arrNames.length; j++) {
+    if (arrNames[j] === checkAName) {
         result = false;
         break;
     } else {
@@ -23,4 +25,3 @@ if (result === true) {
 } else {
     alert(checkAName + ', Вы успешно вошли');
 }
-var granName = 1
