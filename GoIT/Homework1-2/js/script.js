@@ -2,7 +2,7 @@
 
 
 var arrNames = [];
-for (var i = 0; i < 5; i++); {
+for (var i = 0; i < 5; i++) {
     var enteredName = prompt('Enter a name');
     enteredName.toString();
     arrNames.push(enteredName);
