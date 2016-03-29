@@ -20,7 +20,7 @@ var generateDOM = {
         do {
             blockOfTest();
             howManyQuestions++;
-        } while (howManyQuestions <= 5);
+        } while (howManyQuestions <= 3);
 
         function blockOfTest() {
             jsUl = document.createElement('ul');
