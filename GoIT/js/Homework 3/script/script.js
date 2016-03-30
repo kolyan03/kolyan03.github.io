@@ -18,11 +18,11 @@ var generateDOM = {
    
         var howManyQuestions = 1;
         do {
-            blockOfTest();
+            madeBlockOfTest();
             howManyQuestions++;
         } while (howManyQuestions <= 3);
 
-        function blockOfTest() {
+        function madeBlockOfTest() {
             jsUl = document.createElement('ul');
             jsUl.classList.add('aQuestion');
             jsForm.appendChild(jsUl);
