@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {    
+    background-color: yellow;
+  }
+
+#hours, .minutes, #seconds, ml-seconds, .twice-point, .just  {
+    display: inline;    
+}
+
+.wrapper {
+   margin: 0 auto;
+   background-color: hotpink;
+   width: 80%;
+}
+
+.header {
+    height: 50px;
+    margin: 0 auto;
+    white-space: 60%;
+    background-color: blueviolet;
+    color: #fff;
+    text-align: center;
+}
+#stop-watch {
+    margin: 0 auto;
+    border: 14px solid #000;
+    border-radius: 25px;
+    height: 150px;
+    width: 70%;
+    padding-left: 25%;
+    
+    
+}
+#hours, #twice-point-h, #minutes, #twice-point-m, #seconds, #twice-point-s, #millisecond {
+    float: left;
+    
+}
+
+.control {
+	text-align: center;
+}
+.start, .pause, .stop {
+	display: inline-block;
+}
+
+#seconds {
+    color: green;
+    font-size: 33px;
+}
+.hide {
+    display: none;
+}
