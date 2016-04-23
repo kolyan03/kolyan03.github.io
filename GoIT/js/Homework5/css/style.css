@@ -1,24 +1,22 @@
 @charset "utf-8";
-/* CSS Document */
+@import url("helveticaneue_thin/stylesheet.css");
+@import url("Merkur/stylesheet.css");
 
+/* CSS Document */
 
 * {
     padding: 0;
     margin: 0;
 }
 
-body {    
-    background-color: yellow;
-  }
-
-#hours, .minutes, #seconds, ml-seconds, .twice-point, .just  {
-    display: inline;    
+body {
+    background-color: palevioletred;
 }
 
 .wrapper {
-   margin: 0 auto;
-   background-color: hotpink;
-   width: 80%;
+    margin: 0 auto;
+    background-color: hotpink;
+    width: 80%;
 }
 
 .header {
@@ -28,33 +26,64 @@ body {
     background-color: blueviolet;
     color: #fff;
     text-align: center;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif
 }
+
 #stop-watch {
     margin: 0 auto;
     border: 14px solid #000;
     border-radius: 25px;
-    height: 150px;
-    width: 70%;
-    padding-left: 25%;
-    
-    
-}
-#hours, #twice-point-h, #minutes, #twice-point-m, #seconds, #twice-point-s, #millisecond {
-    float: left;
-    
+    height: 250px;
+    width: 85%;
+    text-align: center;
 }
 
-.control {
-	text-align: center;
-}
-.start, .pause, .stop {
-	display: inline-block;
+#indicate,
+#milliseconds {
+    font-family: Merkur;
+    font-size: 150px;
+    font-style: italic;
+    display: inline-block;
 }
 
-#seconds {
-    color: green;
-    font-size: 33px;
+#milliseconds {
+    font-size: 50px;
 }
+
+.control, #write-here {
+    text-align: center;
+    background-color: yellow;
+}
+
+#write-here{
+    padding-top: 70px;
+    display: block;
+    background-color: blue;
+}
+
+.start,
+.pause,
+.stop,
+.split {
+    display: inline-block;
+    margin: 10px 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+
 .hide {
     display: none;
+}
+
+.splitted {
+    font-family: Merkur;
+    display: block;
+    font-size: 25px;
+    background-color: deepskyblue;
+    width: 260px;
+    margin-left: 40%;
+    border: 2px #000 solid;
+    border-radius: 22px;
+   
 }

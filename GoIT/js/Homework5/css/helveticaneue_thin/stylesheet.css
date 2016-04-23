@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'helveticaneue thin';
+	src: url('helveticaneue-thin-webfont.eot');
+	src: url('helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+		url('helveticaneue-thin-webfont.woff') format('woff'),
+		url('helveticaneue-thin-webfont.ttf') format('truetype');
+}
