@@ -1,0 +1,200 @@
+@import url("OpenSans_Regular/stylesheet.css");
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eeeeee;
+	font-family: "OpenSans Regular";
+	font-style: normal;
+	padding: 0px 110px;
+}
+
+.wrapper {
+	background-color: #ffffff;
+	width: 1069px;
+	margin: 0px auto;
+	padding-bottom: 60px;
+	box-shadow: 1px 3px 5px 5px #dbdbdb;
+}
+
+.logo {
+	margin: 20px 35px 50px;
+}
+
+.header {
+	background-color: #535353;
+	margin: 0px 35px 0px;
+	width: 980px;
+	height: 40px;
+	display: block;
+}
+
+ul.top-menu li {
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+}
+
+ul.top-menu li a {
+	display: block;
+	padding: 10px 32px;
+	color: #ffffff;
+	text-decoration: none;
+	border-left: solid 1px #535353;
+	border-right: solid 1px #535353;
+}
+
+.header li a:hover,  {
+	background-color: #444444;
+	border-right: solid 1px #838383;
+	border-left: solid 1px #838383;
+}
+
+.left {
+	float: left;
+	word-wrap: break-word;
+	background-color: white;
+	margin: 80px 40px 0px 35px;
+	border-top: solid 1px #c8c8c8;
+	border-left: solid 1px #c8c8c8;
+	border-right: solid 1px #c8c8c8;
+	border-bottom: solid 1px #c8c8c8;
+	width: 240px;
+	height: 246px;
+	font-size: 13px;
+}
+
+ul.side-menu li {
+	display: block;
+	text-align: left;
+	height: 40px;
+	border-bottom: solid 1px #c8c8c8;
+}
+
+ul.side-menu li a {
+	display: block;
+	padding: 9px 15px;
+	text-decoration: none;
+	color: #656363;
+}
+
+ul.side-menu li a:hover {
+	background-color: #f9f9f9;
+	color: #2c2c2c;
+	padding-left: 25px;
+}
+
+.content {
+	display: block;
+	width: 676px;
+	float: right;
+	margin: 80px 75px 0px 0px;
+}
+
+.wheel {
+	border: solid 1px #c8c8c8;
+	padding: 75px 95px 55px 95px;
+}
+
+p {
+	display: block;
+	color: #2c2c2c;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 21px;
+	padding: 40px 29px 55px 29px;
+	width: 675px;
+}
+
+.footer {
+	clear: both;
+	background-color: #e1e1e1;
+	margin: 0 auto;
+	width: 980px;
+	height: 40px;
+	font-size: 13px;
+}
+
+ul.bot-menu {
+	margin: 0;
+	list-style: none;
+}
+
+ul.bot-menu li {
+	display: inline-block;
+	text-align: center;
+}
+
+ul.bot-menu li a {
+	display: block;
+	padding: 10px 47px;
+	text-decoration: none;
+	color: #2c2c2c;
+}
+
+ul.bot-menu li a:hover {
+	text-decoration: underline;
+}
+
+.copyright {
+	float: right;
+	display: block;
+	padding: 10px 16px;
+	text-decoration: none;
+	color: #2c2c2c;
+}
+
+
+/* ДОБАВЛЯЕМ СТИЛИ ДЛЯ ТАБ*/
+
+#about-main,
+#about-goods,
+#about-us,
+#about-connect,
+#recall {
+	display: none;
+	background-color: #444444;
+}
+
+.header p,
+.form label {
+	font-size: 14px;
+	padding: 5px;
+	color: sandybrown;
+}
+
+input {
+	margin: 6px;
+	height: 20px;
+}
+
+.confirm {
+	width: 125px;
+	height: 25px;
+	background: #7B58DF;
+	border: 1px #E53336;
+	border-radius: 25px;
+	cursor: pointer;
+	margin: 0 0 5px 150px;
+}
+
+
+/*////////////////////////*/
+
+.tooltip-block {
+	/* тултип */
+	position: absolute;
+	background: coral;
+	border: 1px solid rgb(230, 230, 230);
+	padding: 5px 8px;
+	font-size: 12px;
+	width: 200px;
+	line-height: 13px;
+	color: #eeeeee;
+	z-index: 400;
+	display: none;
+	border-radius:15px;
+	opacity: 0.7;
+}
