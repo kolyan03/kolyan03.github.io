@@ -7,7 +7,7 @@ function stopWatch(elem) {
     var ourInterval;
     var offsetOfTime;
     var canSplit;
-
+    var writeHere = 0;
 
 
     function changeOfTime() {
