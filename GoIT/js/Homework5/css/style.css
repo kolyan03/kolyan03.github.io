@@ -46,13 +46,13 @@ body {
 }
 
 #indicate {
-	width:50%;
+	width:700px;
 }
 
 #milliseconds {
     font-size: 50px;
     width: 100px;
-    margin-right: 49px;
+    margin-right: 50px;
 }
 
 .control, #write-here {
