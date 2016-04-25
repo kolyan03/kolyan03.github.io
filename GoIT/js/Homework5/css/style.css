@@ -40,14 +40,19 @@ body {
 
 #indicate,
 #milliseconds {
-    font-family: Merkur;
     font-size: 150px;
     font-style: italic;
     display: inline-block;
 }
 
+#indicate {
+	width:50%;
+}
+
 #milliseconds {
     font-size: 50px;
+    width: 100px;
+    margin-right: 49px;
 }
 
 .control, #write-here {
