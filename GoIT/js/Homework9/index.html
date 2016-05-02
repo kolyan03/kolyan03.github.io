@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/formoid-default-skyblue.css" type="text/css" />
     <link rel="stylesheet" href="css/jcarousel.basic.css">
     <link rel="stylesheet" href="css/slide-menu.css">
+    <link rel="stylesheet" href="css/jquery.checkbox.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
 
@@ -16,6 +17,8 @@
     <script src="script/jquery.jcarousel.min.js"></script>
     <script src="script/jcarousel.basic.js"></script>
     <script src="script/slide-menu.js"></script>
+    <script src="script/jquery.checkbox.min.js"></script>
+    <script src="script/jquery.check.js"></script>
 
 </head>
 
@@ -187,25 +190,33 @@
                     <span>БРЕНДЫ:</span>
                 </div>
                 <div class="side-list-right">
-                    <form class="formoid-default-skyblue" method="post">
+                    <form class="" method="post">
 
-                        <div class="element-checkbox"><label class="title">Шины</label>
+                        <ul class="side-menu-right ">
+                                <li class="brends-discs "><span>ШИНЫ</span></li>
+                            </ul>
                             <div class="column column1">
                                 <label>
-                                    <input class = "left-side" type="checkbox" name="checkbox[]" value="Nokian"/>
+                                    <input class = "jquery-checkbox" type="checkbox" name="checkbox[]" value="Nokian"/>
                                     <span>Nokian</span>
                                 </label>
+                                <br>
+                                <br>
                                 <label>
-                                    <input class = "left-side" type="checkbox" name="checkbox[]" value="Hankook"/>
+                                    <input class = "jquery-checkbox" type="checkbox" name="checkbox[]" value="Hankook"/>
                                     <span>Hankook</span>
                                 </label>
+                                 <br>
+                                 <br>
+                                 
                                 <label>
-                                    <input class = "left-side" type="checkbox" name="checkbox[]" value="Goodyear"/>
+                                    <input class = "jquery-checkbox" type="checkbox" name="checkbox[]" value="Goodyear"/>
                                     <span>Goodyear</span>
                                 </label>
+                                 <br>
                             </div>
-                            <span class="clearfix"></span>
-                        </div>
+                           
+                        
 
                         <div>
                             <ul class="side-menu-right ">
