@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+
+    <!--<base href="http://rastimplant.ru">-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="csrf-token" content="4i0fpGarq9NaZRjE0qONKmiNWxsNFb5LYghXe7FI">
+
+    <meta name="robots" content="noindex,nofollow">
+
+    <meta name="google-site-verification" content="aAkgdfpaS12zNAv-EQIC4POkaXweThvqArM6VoG_Vxw">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Главная">
+
+    <link rel="shortcut icon" type="image/x-icon" href="http://rastimplant.ru/favicon.ico">
+
+    <title>Главная</title>
+
+    <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="dashboard/css/fileinput.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="dashboard/css/bootstrap-datetimepicker.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/bootstrap-multiselect.css">
+    <link media="all" type="text/css" rel="stylesheet" href="dashboard/css/summernote.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/module/select2.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/module/jquery-clockpicker.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/module/rating.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/calendar.css">
+    <link media="all" type="text/css" rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <center>
+        <div id="blackout"></div>
+        <div id="modalLoginBG" onclick="closeModalLogin()"></div>
+        <div style="z-index:11;position:fixed;width:100%">
+            <center>
+                <div id="blockLogin">
+                    <img style="float:right;cursor:pointer;margin:8px 10px 0 0" onclick="closeModalLogin()" src="images/close-modal.png" alt="close-modal">
+                    <div style="clear:both"></div>
+                    <center style="color:white;font-size:30px">Вход</center>
+                    <center style="color:#d3eaea;font-size:16px;">Введите логин и пароль</center>
+                    <br>
+                    <form method="POST" action="http://rastimplant.ru/auth/login" accept-charset="UTF-8" id="loginForm">
+                        <input name="_token" type="hidden" value="4i0fpGarq9NaZRjE0qONKmiNWxsNFb5LYghXe7FI">
+                        <input placeholder="Логин" name="login" type="text">
+                        <input placeholder="Пароль" name="password" type="password" value="">
+                        <button class="btn btn-login" style="text-transform: uppercase;margin:0 0 15px 0;width:330px" type="submit">Отправить</button>
+                    </form>
+                    <div style="float:left;padding-left:12px">
+                        <a href="regtype/">Зарегистрироваться</a>
+                    </div>
+                    <div style="float:right;padding-right:12px">
+                        <a href="password/email/">Восстановить пароль</a>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+            </center>
+        </div>
+    </center>
+    <div class="wrapper">
+
+        <div id="header">
+
+            <div class="naming"><span>Российская Ассоциация</span> <br> <span>Стоматологической Имплантологии</span>
+            </div>
+            <img style="float:right;margin-top:-50px;margin-right:30px;cursor:pointer" onclick="openModalLogin()" src="images/login-btn.png" alt="login">
+        </div>
+
+        <div id="content">
+            <div class="content-article">
+                <p class="previous-page">Главная / <span class="this-page">Библиотека технологий</span></p>
+                <h1>Библиотека технологий</h1>
+            </div>
+
+            <form class="dropdown" id="raiting-of-patients" method="POST">
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm">Рейтинг пациентов </button>
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <ul class="dropdown-menu">
+                        <li role="presentation" class="dropdown-header">Dropdown header 1</li>
+                        <li role="presentation"><a href="#">First Link</a></li>
+                        <li role="presentation" class="disabled"><a href="#">Disabled Link</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a href="#">Separated Link</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm">Рейтинг пациентов </button>
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span></button>
+                    <ul class="dropdown-menu">
+                        <li role="presentation" class="dropdown-header">Dropdown header 1</li>
+                        <li role="presentation"><a href="#">First Link</a></li>
+                        <li role="presentation" class="disabled"><a href="#">Disabled Link</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a href="#">Separated Link</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-sm">Рейтинг пациентов </button>
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span><span class="sr-only">Toggle Dropdown</span></button>
+                    <ul class="dropdown-menu">
+                        <li role="presentation" class="dropdown-header">Dropdown header 1</li>
+                        <li role="presentation"><a href="#">First Link</a></li>
+                        <li role="presentation" class="disabled"><a href="#">Disabled Link</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a href="#">Separated Link</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn">
+                    <button type="button" class="btn btn-default btn-sm" id="patients-submit"> Искать </button>
+                </div>
+
+            </form>
+            <div class="container">
+                <div class="info1">
+
+                    <div class="info1-foto">
+                        <img src="images/new/to-write1.png" alt="image for info1">
+                    </div>
+
+                    <div class="info-head">
+                        <p class="info-head-article">Категория записи</p>
+                        <div class="generated-date">
+                            Date and time
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <h3 class="note-article"><a href="#">Заголовок записи</a></h3>
+                        <div class="note-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, molestiae, at. Laudantium nulla laboriosam provident, quam aspernatur repellat consequuntur reiciendis impedit sapiente earum ipsa architecto dolores quasi sed ipsum odit!Omnis alias cumque
+                            vitae magnam dicta saepe quaerat possimus provident tempore enim labore dolore pariatur reiciendis, sint quae, non hic. Molestiae, in!Exercitationem atque reprehenderit iusto earum eaque, provident illo alias ex quas labore
+                            ullam sint consequuntur dolorem, quidem quia laudantium culpa optio excepturi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore harum aliquid veniam fuga voluptate libero non consectetur, provident
+                            sed temporibus saepe minima, officia officiis cumque laboriosam enim quasi ipsum.dit sint, tempore, molestiae quis cum nobis saepe consequuntur debitis repellendus modi ratione, quae eum corrupti repudiandae cumque quibusdam
+                            eligendi est voluptate?
+                        </div>
+
+                        <div class="info-footer">
+                            <img src="images/new/Forma_1.png" alt="some mark">
+                            <span class="info-footer-article">Категория</span>
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-white.png" alt="some mark">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="info2">
+
+                    <div class="info2-foto">
+                        <img src="images/new/to-write2.png" alt="image for info1">
+                    </div>
+
+                    <div class="info-head">
+                        <p class="info-head-article">Категория записи</p>
+                        <div class="generated-date">
+                            Date and time
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <h3 class="note-article"><a href="#">Заголовок записи</a></h3>
+                        <div class="note-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, molestiae, at. Laudantium nulla laboriosam provident, quam aspernatur repellat consequuntur reiciendis impedit sapiente earum ipsa architecto dolores quasi sed ipsum odit!Omnis alias cumque
+                            vitae magnam dicta saepe quaerat possimus provident tempore enim labore dolore pariatur reiciendis, sint quae, non hic. Molestiae, in!Exercitationem atque reprehenderit iusto earum eaque, provident illo alias ex quas labore
+                            ullam sint consequuntur dolorem, quidem quia laudantium culpa optio excepturi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore harum aliquid veniam fuga voluptate libero non consectetur, provident
+                            sed temporibus saepe minima, officia officiis cumque laboriosam enim quasi ipsum.dit sint, tempore, molestiae quis cum nobis saepe consequuntur debitis repellendus modi ratione, quae eum corrupti repudiandae cumque quibusdam
+                            eligendi est voluptate?
+                        </div>
+
+                        <div class="info-footer">
+                            <img src="images/new/Forma_1.png" alt="some mark">
+                            <span class="info-footer-article">Категория</span>
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-white.png" alt="some mark">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="info3">
+
+                    <div class="info3-foto">
+                        <img src="images/new/to-write3.png" alt="image for info1">
+                    </div>
+
+                    <div class="info-head">
+                        <p class="info-head-article">Категория записи</p>
+                        <div class="generated-date">
+                            Date and time
+                        </div>
+                    </div>
+
+                    <div class="info-content">
+                        <h3 class="note-article"><a href="#">Заголовок записи</a></h3>
+                        <div class="note-content">
+                            
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, molestiae, at. Laudantium nulla laboriosam provident, quam aspernatur repellat consequuntur reiciendis impedit sapiente earum ipsa architecto dolores quasi sed ipsum odit!Omnis alias cumque
+                            vitae magnam dicta saepe quaerat possimus provident tempore enim labore dolore pariatur reiciendis, sint quae, non hic. Molestiae, in!Exercitationem atque reprehenderit iusto earum eaque, provident illo alias ex quas labore
+                            ullam sint consequuntur dolorem, quidem quia laudantium culpa optio excepturi? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati inventore harum aliquid veniam fuga voluptate libero non consectetur, provident
+                            sed temporibus saepe minima, officia officiis cumque laboriosam enim quasi ipsum.dit sint, tempore, molestiae quis cum nobis saepe consequuntur debitis repellendus modi ratione, quae eum corrupti repudiandae cumque quibusdam
+                            eligendi est voluptate?
+                        </div>
+
+                        <div class="info-footer">
+                            <img src="images/new/Forma_1.png" alt="some mark">
+                            <span class="info-footer-article">Категория</span>
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-blue.png" alt="some mark">
+                            <img src="images/new/small-tooth-white.png" alt="some mark">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="menu">
+            <a href="/"><img id="logo-rasti" src="images/logo.png" alt="logo"></a>
+            <!-- Незаёгестрированный юзер-->
+
+            <ul id="mn">
+                <li class="mn-main" title="Основное меню">
+                    <i class="fa fa-align-left"></i>
+                    <ul>
+                        <div>Меню сайта</div>
+                        <li><a href="">О РАСтИ</a></li>
+                        <li>
+                            <a href="">Информация для пациентов <i class="fa fa-angle-double-right"></i></a>
+                            <ul>
+                                <li><a href="http://rastimplant.ru/pages/1/">Что такое дентальная имплантация</a></li>
+                                <li><a href="http://rastimplant.ru/pages/2/">Показания и противопоказания</a></li>
+                                <li><a href="http://rastimplant.ru/pages/3/">Альтернативные пути лечения</a></li>
+                                <li><a href="http://rastimplant.ru/pages/4/">Преимущества имплантации</a></li>
+                                <li><a href="http://rastimplant.ru/pages/5/">Жизнь с имплантатами (Правила пользования / уход за имплантатами)</a></li>
+                                <li><a href="http://rastimplant.ru/pages/6/">Цена имплантации</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Виртуальная консультация</a></li>
+                        <li><a href="">Отзывы пациентов</a></li>
+                        <li><a href="">Поиск врача и клиники по критериям</a></li>
+                        <li><a href="">Карта клиник</a></li>
+                        <li><a href="">Для специалистов</a></li>
+                        <li><a href="">Войти</a></li>
+                    </ul>
+                </li>
+                <li title="Информация для пациентов">
+                    <i class="fa fa-book"></i>
+                </li>
+                <li title="Виртуальная консультация">
+                    <a href="http://rastimplant.ru/consultation/"><i class="fa fa-question-circle"></i></a>
+                </li>
+                <li title="Поиск врача и клиники по критериям">
+                    <i class="fa fa-search"></i>
+                </li>
+                <li title="Отзывы пациентов">
+                    <a href="http://rastimplant.ru/reviews/"><i class="fa fa-comments"></i></a>
+                </li>
+                <li title="Карта клиник">
+                    <a href="http://rastimplant.ru/map/"><i class="fa fa-map"></i></a>
+                </li>
+                <li title="Для специалистов">
+                    <i class="fa fa-user-md"></i>
+                </li>
+                <li onclick="openModalLogin()" title="Войти">
+                    <i class="fa fa-sign-in"></i>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+
+
+        <div id="right-block">
+            <div class="block-title">
+                <center class="right-articles">Имплантологи</center>
+            </div>
+
+            <div class="block-content">
+                <!-- here is first block of right-menu content -->
+                <div class="block-content-head">
+                    <div class="first-object">
+                        <img src="images/new/happy-woman.png" alt="riant people" />
+                        <center style="margin-top:12px">Фамилия Имя Отчество</center>
+                        <center style="margin-top:12px">
+                            <div class="rating">.
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-white.png" alt="some mark">
+                                <br>
+                                <br>
+                                <input type="hidden" name="val" value="2.75" />
+                                <input type="hidden" name="vote-id" value="2" />
+                                <input type="hidden" name="cat_id" value="2" />
+                            </div>
+                        </center>
+
+                    </div>
+                    <div class="second-object">
+                        <img src="images/new/happy-men.png" alt="riant people" />
+                        <center style="margin-top:12px">Фамилия Имя Отчество</center>
+
+                        <center style="margin-top:12px">
+                            <div class="rating">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-white.png" alt="some mark">
+                                <img src="images/new/small-tooth-white.png" alt="some mark">
+                                <br>
+                                <br>
+                                <input type="hidden" name="val" value="2.75" />
+                                <input type="hidden" name="vote-id" value="2" />
+                                <input type="hidden" name="cat_id" value="2" />
+                            </div>
+                        </center>
+
+                    </div>
+                </div>
+
+                <center>
+                    <button class="btn btn-default">Смотреть всех имплантологов</button>
+                </center>
+
+            </div>
+
+            <div class="block-title">
+                <!-- here is second block of right-menu content -->
+                <center class="right-articles">Клиники</center>
+            </div>
+
+            <div class="block-content">
+                <div class="block-content-head">
+                    <div class="first-object">
+                        <img src="images/new/clinic1.png" alt="building of clinic" />
+                        <center style="margin-top:12px"> Название клиники </center>
+                        <center style="margin-top:12px">
+                            <div class="rating">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-white.png" alt="some mark">
+                                <img src="images/new/small-tooth-white.png" alt="some mark"> 
+                                <br>                               
+                                <br>                               
+                                <input type="hidden" name="val" value="2.75" />
+                                <input type="hidden" name="vote-id" value="2" />
+                                <input type="hidden" name="cat_id" value="2" />
+                            </div>
+                        </center>
+
+                    </div>
+                    <div class="second-object">
+                        <img src="images/new/clinic2.png" alt="building of clinic" />
+                        <center style="margin-top:12px"> Название клиники </center>
+                        <center style="margin-top:12px">
+                            <div class="rating">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-blue.png" alt="some mark">
+                                <img src="images/new/small-tooth-white.png" alt="some mark">
+                                <img src="images/new/small-tooth-white.png" alt="some mark">
+                                <br>
+                                <br>
+                                <input type="hidden" name="val" value="2.75" />
+                                <input type="hidden" name="vote-id" value="2" />
+                                <input type="hidden" name="cat_id" value="2" />
+                            </div>
+                        </center>
+
+                    </div>
+                </div>
+
+                <center>
+                    <button class="btn btn-default"> Посмотреть все клиники </button>
+                </center>
+
+            </div>
+            <img src="images/new/some-image.png" alt="some image 290px">
+            <center class="title-h3-right">Информация для пациентов</center>
+            <div style="margin:15px 30px 0 30px"><img src="images/ok-right-block.png">
+                <div style="position:absolute;margin-top:-21px;margin-left:27px;font-size:18px"><b>Заголовок</b>
+                </div>
+            </div>
+            <div style="font-size:16px;margin:10px 30px">Здесь публикуется анонс последней статьи из раздела Информация для пациента...<a href="javascript://">>>></a></div>
+            <div style="margin:15px 30px 0 30px"><img src="images/ok-right-block.png">
+                <div style="position:absolute;margin-top:-21px;margin-left:27px;font-size:18px"><b>Заголовок</b>
+                </div>
+            </div>
+            <div style="font-size:16px;margin:10px 30px">Здесь публикуется анонс последней статьи из раздела Информация для пациента...<a href="javascript://">>>></a></div>
+            <br>
+            <center>
+                <button class="btn btn-default">Посмотреть всю информацию</button>
+            </center>
+
+        </div>
+
+        <div class="clearer"></div>
+
+
+
+        <div id="footer" class="footer">
+            <span class="footer-trade-mark">© 2015 Российская Ассоциация Стоматологической Имплантологии</span>
+            <span class="footer-contacts">Тел: +7 (925) 564-65-89<br>e-mail: info@rastimplant.ru
+                </span>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/module/jquery.countdown360.min.js"></script>
+    <script src="dashboard/js/fileinput.min.js"></script>
+    <script src="dashboard/js/moment/moment.min.js"></script>
+    <script src="dashboard/js/moment/ru.js"></script>
+    <script src="dashboard/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/bootstrap-multiselect.js"></script>
+    <script src="dashboard/js/summernote.min.js"></script>
+    <script src="js/module/select2.full.min.js"></script>
+    <script src="js/module/jquery-clockpicker.min.js"></script>
+    <script src="js/module/jquery.vaccordion.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
