@@ -1,13 +1,15 @@
 //JavaScript document
-'use strict'
+//'use strict'
 
 /*//////////////////HERE IS BLOCK OF QUESTION AND ANSWER FOR TEMPLATE////////////////////////////////////////*/
-$(function() {
+$(function () {
+
+
 
 
     var hereQuestions = [{
-            question: '.  Когда началась Вторая мировая война? ', //First question
-        },
+        question: '.  Когда началась Вторая мировая война? ', //First question
+    },
 
         {
             question: '.  В какой стране проходила "Хрустальная ночь"? ', //Second question
@@ -19,8 +21,9 @@ $(function() {
             question: '. Как погиб дедушка Вовочки в 1942 году?' //Fourth question
         }
     ];
+    //Rendering of questions ////
 
-
+   
     var hereAnswersFor = {
         allAnswers: [{
             //Answers for a first question///
@@ -28,52 +31,52 @@ $(function() {
                 value: '. 01 сентября 1939 года',
                 correct: 'right'
             }, {
-                value: '. 22 июня 1941 года.',
-                correct: 'wrong'
-            }, {
-                value: '. ... Што?',
-                correct: 'wrong'
-            }]
+                    value: '. 22 июня 1941 года.',
+                    correct: 'wrong'
+                }, {
+                    value: '. ... Што?',
+                    correct: 'wrong'
+                }]
         }, { //Answers for a second question///
-            answer: [{
-                value: '. Франция',
-                correct: 'wrong'
-            }, {
-                value: '. Германия',
-                correct: 'right'
-            }, {
-                value: '. Правильно говорить не "Хрустальная ночь", а "Волынская резня"',
-                correct: 'wrong'
+                answer: [{
+                    value: '. Франция',
+                    correct: 'wrong'
+                }, {
+                        value: '. Германия',
+                        correct: 'right'
+                    }, {
+                        value: '. Правильно говорить не "Хрустальная ночь", а "Волынская резня"',
+                        correct: 'wrong'
+                    }]
+            }, { //Answers for a third question///
+                answer: [{
+                    value: '. Пока',
+                    correct: 'wrong'
+                }, {
+                        value: '. Всем спасибо, все свободны',
+                        correct: 'right'
+                    }, {
+                        value: '. Не поминайте лихом',
+                        correct: 'wrong'
+                    }, {
+                        value: '. Кто старое помянет, тому глаз вон',
+                        correct: 'wrong'
+                    }]
+            }, { //Answers for a fourth question///
+                answer: [{
+                    value: '. В разведке',
+                    correct: 'wrong'
+                }, {
+                        value: '. Подавал снаряды',
+                        correct: 'wrong'
+                    }, {
+                        value: '. Пьяный с вышки упал',
+                        correct: 'right'
+                    }, {
+                        value: '. С голоду',
+                        correct: 'wrong'
+                    }]
             }]
-        }, { //Answers for a third question///
-            answer: [{
-                value: '. Пока',
-                correct: 'wrong'
-            }, {
-                value: '. Всем спасибо, все свободны',
-                correct: 'right'
-            }, {
-                value: '. Не поминайте лихом',
-                correct: 'wrong'
-            }, {
-                value: '. Кто старое помянет, тому глаз вон',
-                correct: 'wrong'
-            }]
-        }, { //Answers for a fourth question///
-            answer: [{
-                value: '. В разведке',
-                correct: 'wrong'
-            }, {
-                value: '. Подавал снаряды',
-                correct: 'wrong'
-            }, {
-                value: '. Пьяный с вышки упал',
-                correct: 'right'
-            }, {
-                value: '. С голоду',
-                correct: 'wrong'
-            }]
-        }]
     };
 
     var JSONhereAnswersFor = JSON.stringify(hereAnswersFor);
@@ -86,6 +89,7 @@ $(function() {
     var z = 1; // THIS IS A COUNT OF QUESTION /////
     /////////////////// BODY OF TEST /////////////////////////////// 
 
+
     var jsWrapper = document.createElement('div');
     jsWrapper.classList.add('wrapper');
     var jsBody = document.querySelector('body');
@@ -94,16 +98,15 @@ $(function() {
     var jsTopText = document.createElement('p');
     jsTopText.classList.add('top-text');
     jsWrapper.appendChild(jsTopText);
-    jsTopText.innerText = 'Тест, просто тест';
-
-
+    //Rendering of head //
+    var headOfTest = 'ТеСт, ПрОсТо ТеСт';
+    $('.top-text').render(headOfTest);
+    jsTopText.innerText = headOfTest;
+    
     var jsForm = document.createElement('form');
     jsWrapper.appendChild(jsForm);
 
-
-
     (function TEST() {
-
         do {
             blockOfTest();
             z++;
@@ -117,19 +120,12 @@ $(function() {
         var jsUl = document.createElement('ul');
         jsUl.classList.add('aQuestion' + z);
         jsForm.appendChild(jsUl);
-       
-//        jsUl.innerHTML = '<script id="thisIsQuestion"><p id="questionWriteHere"><%=templatedQuestion  %></p></script>'
+        // //Rendering of questions //       
+        var renderedQuestions = z + '. Вопрос № ' + z + hereQuestions[z - 1].question;
+        $('ul').render(renderedQuestions);
+        jsUl.innerHTML = renderedQuestions; /*z + '. Вопрос № ' + z + hereQuestions[z - 1].question;*/
 
-//console.log('jsUl.innerHTML', jsUl.innerHTML);
 
-//        var newQuestion = $('#thisIsQuestion').html();
-//        var questionHtml = "z + '. Вопрос № ' + z + hereQuestions[z - 1].question";
-        
-//        console.log('qweiruh', questionHtml);
-
-//        var templatedQuestion = tmpl(newQuestion, questionHtml);
-
-        jsUl.innerHTML = z + '. Вопрос № ' + z + hereQuestions[z - 1].question;
 
         for (var i = 1; i <= hereAnswers.allAnswers[z - 1].answer.length; i++) { // string hereAnswers.allAnswers[z-1].answer.length  is a count of answers for a same question/////
             //Затем - блок ответов
@@ -149,8 +145,12 @@ $(function() {
 
             var yourAnswer = document.createElement('label');
             yourAnswer.setAttribute('for', 'answer-number' + i);
-            blockOfAnswer.appendChild(yourAnswer);
-            yourAnswer.innerHTML = ' Вариант ответа № ' + i + hereAnswers.allAnswers[z - 1].answer[i - 1].value;
+            blockOfAnswer.appendChild(yourAnswer);            
+            var renderedAnswers = ' Вариант ответа № ' + i + hereAnswers.allAnswers[z - 1].answer[i - 1].value;
+            $('label').render(renderedAnswers);
+            yourAnswer.innerHTML = renderedAnswers;
+            
+            
 
         }
 
@@ -165,11 +165,11 @@ $(function() {
 
     // Подсчет и приведение к читаемому виду результатов теста //
 
-    $('.confirm-answers').on('click', function() {
+    $('.confirm-answers').on('click', function () {
 
         var correctAnswers = 0;
 
-        var userAnswers = $('input:checked').each(function(index, element) {
+        var userAnswers = $('input:checked').each(function (index, element) {
 
             if ($(this).attr('correct') == 'right') {
                 correctAnswers++;
@@ -190,10 +190,10 @@ $(function() {
 
     // Вывод результатов в виеде модального окна //
 
-    $('.confirm-answers').on('click', (function(event) { // лoвим клик пo элементу с нужным классом
+    $('.confirm-answers').on('click', (function (event) { // лoвим клик пo элементу с нужным классом
         event.preventDefault(); // выключaем стaндaртную рoль элементa
         $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-            function() { // пoсле выпoлнения предъидущей aнимaции
+            function () { // пoсле выпoлнения предъидущей aнимaции
                 $('#modal_form')
                     .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
                     .animate({
@@ -203,20 +203,20 @@ $(function() {
             });
     }));
     // Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке 
-    $('#modal_close, #overlay').on('click', (function() { // лoвим клик пo крестику или пoдлoжке
+    $('#modal_close, #overlay').on('click', (function () { // лoвим клик пo крестику или пoдлoжке
         $('#modal_form')
             .animate({
-                    opacity: 0,
-                    top: '45%'
-                }, 200, // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
-                function() { // пoсле aнимaции
-                    $(this).css('display', 'none'); // делaем ему display: none;
-                    $('#overlay').fadeOut(400); // скрывaем пoдлoжку
-                    $("input").prop("checked", false); // очищаем пользовательские ответы
-                    localStorage.clear();
-                    //console.log(localStorage.object);
+                opacity: 0,
+                top: '45%'
+            }, 200, // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+            function () { // пoсле aнимaции
+                $(this).css('display', 'none'); // делaем ему display: none;
+                $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                $("input").prop("checked", false); // очищаем пользовательские ответы
+                localStorage.clear();
+                 console.log(localStorage.object);
 
-                }
+            }
             );
 
     }));
