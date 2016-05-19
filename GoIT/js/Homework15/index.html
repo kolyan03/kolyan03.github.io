@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Search form</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+  
+
+  <script>
+    
+     var myCallback = function() {
+        $('#___gcse_0 .gsc-clear-button').remove();
+        $('#___gcse_0 .gsc-search-button').removeClass('gsc-search-button').addClass('button').attr('id', 'start-button');
+     
+    };
+    window.__gcse = {
+        callback: myCallback
+    };
+    
+    (function() {
+      var cx = '009439724289535529024:h9tyktahg48';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+         })();
+         
+        
+         
+  </script>
+
+  <gcse:search>
+
+  </gcse:search>
+
+
+<script src="js/index.js"></script>
+</body>
+
+</html>
