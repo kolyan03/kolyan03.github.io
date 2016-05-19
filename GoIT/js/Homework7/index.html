@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <title>Документ без названия</title>
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="script/js.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
   <script src="script/jquery-1.12.3.min.js"></script>
-  
+  <script src="script/js.js"></script>
+
 </head>
 
 <body>
@@ -40,16 +40,18 @@
       <div class="form" action="#" method="post" id="recall">
         <div class="your-name">
           <label for="enter-name">Ваше имя &nbsp; &nbsp; &nbsp</label>
-          <input type="text" class="enter-data" placeholder="Имя" tip="Как к Вам обращаться?">
+          <input type="text" class="enter-data" placeholder="Имя" tip="Как к Вам обращаться?"><span class="tips">Как к Вам обращаться?</span>
+          <input type="submit" class="show-tips" value="Помощь">         
         </div>
         <div class="your-phone">
           <label for="enter-phone">Ваш телефон</label>
-          <input type="text" class="enter-data" placeholder="Телефон" tip="Куда удобно принять звонок?">
+          <input type="text" class="enter-data" placeholder="Телефон" tip="Куда удобно принять звонок?"><span class="tips">Куда удобно принять звонок?</span>
           <input type="submit" class="confirm" value="Отправить">
         </div>
       </div>
+      
       <div class="tooltip-block">
-        
+
       </div>
       <!--
       <div class="header-tabs">

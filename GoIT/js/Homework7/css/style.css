@@ -46,7 +46,8 @@ ul.top-menu li a {
 	border-right: solid 1px #535353;
 }
 
-.header li a:hover,  {
+.header li a:hover,
+{
 	background-color: #444444;
 	border-right: solid 1px #838383;
 	border-left: solid 1px #838383;
@@ -180,10 +181,21 @@ input {
 	margin: 0 0 5px 150px;
 }
 
+.show-tips {
+	width: 100px;
+	height: 25px;
+	background: #838383;
+	border: 1px #E53336;
+	border-radius: 25px;
+	cursor: pointer;
+	margin: 0 0 5px 150px;
+}
+
 
 /*////////////////////////*/
 
-.tooltip-block {
+.tooltip-block
+{
 	/* тултип */
 	position: absolute;
 	background: coral;
@@ -195,6 +207,24 @@ input {
 	color: #eeeeee;
 	z-index: 400;
 	display: none;
-	border-radius:15px;
+	border-radius: 15px;
+	opacity: 0.7;
+}
+
+.tips {
+	display: none;
+}
+
+span {
+	position: absolute;
+	background: coral;
+	border: 1px solid rgb(230, 230, 230);
+	padding: 5px 8px;
+	font-size: 12px;
+	width: 200px;
+	line-height: 13px;
+	color: #eeeeee;
+	z-index: 400;
+	border-radius: 15px;
 	opacity: 0.7;
 }
