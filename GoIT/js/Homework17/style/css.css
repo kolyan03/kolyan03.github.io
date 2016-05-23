@@ -1,0 +1,93 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-list {
+    list-style-type: none;
+    width: 3125px;
+    /*суммарная ширина всех фото + сумма маржинов у каждого, кроме последнего*/
+    position: relative;
+    padding: 0;
+}
+
+.for-carousel {
+    display: block;
+    margin-right: 120px;
+    float: left;
+}
+
+.for-carousel img {
+    max-width: 483px;
+}
+
+.some-slider {
+    width: 483px;
+    overflow: hidden;
+    float: left;
+    height: 415px;
+    margin: 25px;
+}
+
+.turn-left,
+.turn-right {
+    float: left;
+    display: block;
+    border: 1px solid #000;
+    background-color: deepskyblue;
+    margin: 175px 0 0 0;
+    padding: 0 0 0;
+}
+
+.turn-left:hover,
+.turn-right:hover {
+    cursor: pointer;
+}
+
+.chapter1 {
+    display: block;
+    margin: 0 auto;
+    padding: 0 25%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+
+/*//////////////TEMPLATE////////////////////////////*/
+
+.clear-fix {
+    clear: both;
+}
+
+#rezig-template {
+    display: block;
+    padding: 0 30%;  
+}
+#rezig-template ul {
+    padding-left: 35px;
+    text-align: left;
+}
+.fio {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#rezig-template img {
+    height: 400px;
+    width: 330px;
+}
+#rezig-template p, #rezig-template li {
+    text-align: justify;
+    font-size: 23px;
+}
+#working {
+    font-weight: normal; 
+}
+.footer{
+    height: 50px;
+    display: block;
+}
